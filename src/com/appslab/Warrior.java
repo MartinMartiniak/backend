@@ -7,14 +7,16 @@ public class Warrior {
     private int life;
     private int speed;
     private int muscle;
-    private List<Item> items;
+   // private List<Item> items;
 
-    public Warrior(String name, int life, int speed, int muscle, List<Item> items) {
+    public Warrior(String name, int life, int speed, int muscle) {
+                   //List<Item> items
+
         this.name = name;
         this.life = life;
         this.speed = speed;
         this.muscle = muscle;
-        this.items = items;
+     //   this.items = items;
     }
     public String getName() {
         return name;
@@ -32,9 +34,9 @@ public class Warrior {
         return muscle;
     }
 
-    public List<Item> getItems() {
-        return items;
-    }
+    // public List<Item> getItems() {
+   //     return items;
+  //  }
 
     public static void battle(Warrior warrior1, Warrior warrior2) {
 
